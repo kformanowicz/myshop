@@ -135,3 +135,4 @@ EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
 PAYPAL_RECEIVER_EMAIL = os.environ['PAYPAL_RECEIVER_EMAIL']
 PAYPAL_TEST = True
 
+STATIC_ROOT = os.path.join(BASE_DIR, 'static/')
