@@ -1,9 +1,10 @@
 from django.conf.urls import url
+from django.utils.translation import gettext_lazy as _
 from . import views
 
 
 urlpatterns = [
-    url(r'^process/$', views.payment_process, name='process'),
-    url(r'^done/$', views.payment_done, name='done'),
-    url(r'^cancelled/$', views.payment_cancelled, name='cancelled'),
+    url(_(r'^process/$'), views.payment_process, name='process'),
+    url(_(r'^done/$'), views.payment_done, name='done'),
+    url(_(r'^cancelled/$'), views.payment_cancelled, name='cancelled'),
 ]
