@@ -1,4 +1,4 @@
-Django==2.2.8
+Django==2.2.18
 celery==4.3.0
 flower==0.9.3
 Pillow==6.2.0
